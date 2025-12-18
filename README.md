@@ -1,89 +1,84 @@
-Titanic Survival Prediction
+# Titanic Survival Prediction 🛳️
+Predicting passenger survival on the Titanic using machine learning and feature engineering techniques.
 
-This project predicts the survival of passengers on the Titanic using machine learning models. It is a part of learning data preprocessing, feature engineering, and model building in Python.
 
-🧰 Tools & Libraries
+# Project Overview
 
-Python 3.x
+This project aims to predict whether a passenger survived the Titanic disaster using machine learning. The project demonstrates:
 
-Pandas
+Data cleaning and preprocessing
 
-NumPy
+Feature engineering
 
-Scikit-learn
+Model training and evaluation
 
-Matplotlib / Seaborn (optional for visualization)
+# Dataset
+Kaggle Titanic Dataset
 
-📂 Dataset
+The dataset includes passenger information from the Titanic, such as:
 
-The dataset contains information about Titanic passengers, including:
+PassengerId, Pclass, Name, Sex, Age
 
-PassengerId: Unique ID
-
-Pclass: Ticket class
-
-Name, Sex, Age
-
-SibSp: Number of siblings/spouses aboard
-
-Parch: Number of parents/children aboard
+SibSp (siblings/spouses aboard), Parch (parents/children aboard)
 
 Ticket, Fare, Cabin, Embarked
 
-The dataset is publicly available on Kaggle Titanic Competition
-.
+Source: Kaggle Titanic Dataset
 
-⚙️ Features
+Features
 
-Some important features engineered for this model:
+Some key engineered features used for modeling:
 
-Title: Extracted from passenger names
+Title – extracted from passenger names
 
-FamilySize: Combination of SibSp + Parch
+FamilySize – SibSp + Parch
 
-IsAlone: Whether passenger was traveling alone
+IsAlone – passenger traveling alone or not
 
-Age imputation and binning
+Age – imputed and binned
 
-Fare binning
+Fare – binned
 
-Sex and Embarked converted to numeric
+Sex and Embarked – converted to numeric values
 
-💡 Model
+# Model
 
-We used Random Forest Classifier for predictions. The model was trained and validated on a train-test split of the dataset. Hyperparameters like n_estimators and max_depth were tuned for better accuracy.
+We used a Random Forest Classifier for predictions.
+Hyperparameters such as n_estimators and max_depth were tuned for better accuracy.
 
-📈 Accuracy
+Accuracy on validation set: 77.99%
 
-The current model achieves around [insert your accuracy]% on the validation set.
+⚠️ Note: Model is still being improved with additional feature engineering and tuning.
 
-⚠️ Note: The model is still being improved by adding more feature engineering and hyperparameter tuning.
+# Installation
 
-📦 How to Run
+Clone the repository:
 
-Clone this repository:
-
-git clone https://github.com/yourusername/titanic-survival-prediction.git
+git clone https://github.com/Kr1v/titanic-survival-prediction.git
+cd titanic-survival-prediction
 
 
 Install required libraries:
 
 pip install -r requirements.txt
 
+Usage
 
 Run the Jupyter Notebook or Python script:
 
-jupyter notebook Titanic_Survival.ipynb
+jupyter notebook Titanic.ipynb
 
-🔮 Future Improvements
+# ⚡ Tech Stack
 
-Try other models like XGBoost, Gradient Boosting
+Python | Pandas | NumPy | Scikit-learn 
 
-Feature scaling and additional feature engineering
+# Future Improvements
 
-Cross-validation for more robust evaluation
+Experiment with other models: XGBoost, Gradient Boosting
 
-📌 References
+Additional feature engineering
+
+# References
 
 Kaggle Titanic Competition
 
